@@ -15,4 +15,4 @@ foreach ($list as &$v) {
         }
         $v = $currentPageUrl.implode(".", $v).".php";
 }
-echo json_encode($list); 
+echo json_encode($list, JSON_UNESCAPED_SLASHES);
