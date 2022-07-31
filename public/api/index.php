@@ -5,7 +5,7 @@ const TARGET_SCAN = "../../data";
 $list = scandir(TARGET_SCAN);
 unset($list[0], $list[1]);
 $list = array_values($list);
-$currentPageUrl = 'http://' . $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"];
+$currentPageUrl = 'http://' . $_SERVER["HTTP_HOST"] . '/api/';
 
 header("Content-Type: application/json");
 foreach ($list as &$v) {
